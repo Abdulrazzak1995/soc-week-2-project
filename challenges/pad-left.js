@@ -2,6 +2,7 @@ console.log('padLefts script has loaded');
 
 // write this function!
 function padLeft(string, length) {
+return string.padStart(length, '-');
 }
 
 // if the string is already as long as or longer than the length
@@ -16,6 +17,7 @@ console.assert(padLeft('computers', 10) === '-computers', 'sixth');
 
 
 function padLeftHandler() {
+  debugger;
   // prompt the user for a noun, verb and adjective
   const userString = prompt('enter a string to pad');
 

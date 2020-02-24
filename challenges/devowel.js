@@ -1,7 +1,8 @@
 console.log('devowel script has loaded');
 
 // write this function!
-function devowel() {
+function devowel(str) {
+return str.replace(/a|e|o|u|i|y/gi,'');
 }
 
 // remove all vowels, lower and upper case!
@@ -13,6 +14,7 @@ console.assert(devowel('AaEeIiOoUuAaEeIiOoUu') === '', 'fifth');
 
 
 function devowelHandler() {
+  debugger;
   // prompt the user for a noun, verb and adjective
   const userText = prompt('enter some text');
 

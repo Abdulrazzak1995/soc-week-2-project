@@ -1,9 +1,10 @@
 console.log('repeater script has loaded');
 
 // write this function!
-function repeater() {
+function repeater(userText, occurences) {
+  debugger;
+return(userText + '\n').repeat(occurences);
 }
-
 console.assert(repeater('horse', 2) === 'horse\nhorse\n', 'first');
 console.assert(repeater('walk fast', 3) === 'walk fast\nwalk fast\nwalk fast\n', 'second');
 console.assert(repeater('-.-.-', 1) === '-.-.-\n', 'third');
